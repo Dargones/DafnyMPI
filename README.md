@@ -1,5 +1,7 @@
 # DafnyMPI is a Dafny Library for Verifying Message-Passing Concurrent Programs
 
+[Link to repository](https://github.com/Dargones/DafnyMPI/tree/main)
+
 # Table of Contents:
 
 - [DafnyMPI is a Dafny Library for Verifying Message-Passing Concurrent Programs](#dafnympi-is-a-dafny-library-for-verifying-message-passing-concurrent-programs)
@@ -23,7 +25,7 @@ benchmarks discussed in the accompanying paper (accepted to POPL 2026,
 co-authored by Aleksandr Fedchin, Antero Mejr, Jeffrey S. Foster, and Hari Sundar, 
 will link to preprint soon). 
 This code is also available
-as an artifact on [Zenodo](https://doi.org/10.5281/zenodo.17102521)
+as an artifact on [Zenodo](https://doi.org/10.5281/zenodo.17102521).
 
 ## 2. Hardware Dependencies
 
