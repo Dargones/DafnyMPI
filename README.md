@@ -2,6 +2,7 @@
 
 # Table of Contents:
 
+- [DafnyMPI is a Dafny Library for Verifying Message-Passing Concurrent Programs](#dafnympi-is-a-dafny-library-for-verifying-message-passing-concurrent-programs)
 - [Table of Contents:](#table-of-contents)
   - [1. Introduction](#1-introduction)
   - [2. Hardware Dependencies](#2-hardware-dependencies)
