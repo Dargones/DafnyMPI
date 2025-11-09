@@ -1,0 +1,4 @@
+[submodule "dafny"]
+	path = dafny
+	url = https://github.com/Dargones/dafny.git
+	branch = 4.10.0

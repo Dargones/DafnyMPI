@@ -1,0 +1,54 @@
+name: Test DafnyMPI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ macos-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Install Open MPI
+        run: brew install open-mpi
+
+      - name: Install (Makefile)
+        run: make install-dependencies-mac-arm
+
+      - name: Add Dafny Z3 to PATH
+        run: echo "${{ github.workspace }}/dafny/Binaries/z3/bin" >> "$GITHUB_PATH"
+
+      - name: Verify
+        run: make verify
+
+      - name: Compile to Python
+        run: make compile-python
+
+      - name: Run Linear Convection
+        run: make time-lc
+
+      - name: Run Poisson
+        run: make time-poisson
+
+      - name: Run Heat
+        run: make time-heat
