@@ -1,6 +1,7 @@
 # DafnyMPI is a Dafny Library for Verifying Message-Passing Concurrent Programs
 
 [Link to repository](https://github.com/Dargones/DafnyMPI/tree/main)
+[Link to preprint](https://github.com/Dargones/DafnyMPI/tree/main/paper.pdf)
 
 # Table of Contents:
 
@@ -21,9 +22,7 @@
 This repository hosts DafnyMPI, a library for verifying MPI concurrent code
 in [Dafny](https://github.com/dafny-lang/dafny/tree/master). 
 The repository contains the sources code for DafnyMPI and all the
-benchmarks discussed in the accompanying paper (accepted to POPL 2026, 
-co-authored by Aleksandr Fedchin, Antero Mejr, Jeffrey S. Foster, and Hari Sundar, 
-will link to preprint soon). 
+benchmarks discussed in the accompanying POPL 2026 paper ([preprint](https://github.com/Dargones/DafnyMPI/tree/main/paper.pdf)). 
 This code is also available
 as an artifact on [Zenodo](https://doi.org/10.5281/zenodo.17102521).
 
